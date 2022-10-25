@@ -1,0 +1,23 @@
+:root {
+  --primary-dark-color: #121519;
+  --second-dark-color: #323538;
+  --second-light-color: rgb(238, 238, 238);
+  --primary-green-color: #448c74;
+  --primary-yellow-color: rgb(255, 230, 0);
+  --primary-light-color: rgb(255, 255, 255);
+  --primary-blue-color: #134a8a;
+  --green-hover-color: #37715d;
+}
+
+.darkMode .text-cool {
+  color: var(--primary-light-color);
+}
+
+section {
+  transition: all 0.5s ease;
+}
+
+.fill-body {
+  --bs-bg-opacity: 1;
+  fill: var(--second-light-color), var(--bg-bg-opacity);
+}

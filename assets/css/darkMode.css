@@ -1,0 +1,254 @@
+:root {
+  --primary-dark-color: #121519;
+  --second-dark-color: #323538;
+  --second-light-color: rgb(238, 238, 238);
+  --primary-green-color: #448c74;
+  --primary-yellow-color: rgb(255, 230, 0);
+  --primary-light-color: rgb(255, 255, 255);
+  --primary-blue-color: #134a8a;
+  --green-hover-color: #37715d;
+}
+
+main {
+  transition: all 0.5s ease;
+}
+
+.darkMode .navbar-toggler .navbar-toggler-animation span {
+  background-color: white;
+}
+
+.h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.text-cool {
+  color: var(--primary-blue-color);
+}
+
+.desc {
+  font-size: 25px;
+}
+
+.tiny-slider .item img {
+  max-height: 50px;
+}
+
+.dropdown-item:hover {
+  color: var(--green-hover-color);
+}
+
+.darkMode .dropdown-item:hover {
+  color: var(--primary-light-color);
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--primary-dark-color);
+}
+
+.nav-link:hover {
+  color: var(--green-hover-color);
+}
+
+.darkMode .navbar-collapse ul li a:hover {
+  color: var(--primary-green-color);
+}
+
+.darkMode main {
+  background: #121519;
+}
+
+header {
+  transition: all 0.5s ease;
+}
+
+.darkMode header {
+  background-color: var(--primary-dark-color);
+}
+
+.fill-body {
+  transition: all 0.5s ease;
+}
+
+.darkMode .fill-body {
+  fill: #121519 !important;
+}
+
+.darkSwitch {
+  position: relative;
+  padding: 0;
+  align-items: center;
+}
+
+.darkSwitch li {
+  list-style-type: none;
+  margin: 8px 0;
+  align-items: center;
+}
+
+.darkSwitch li label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert-dismissible .btn-close {
+  padding: 10px;
+}
+
+.alert {
+  margin-top: 10px;
+  padding: 5px;
+  align-items: center;
+}
+
+.darkSwitch li label span {
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  color: var(--primary-dark-color);
+}
+
+.darkSwitch li label span ion-icon {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.darkSwitch li label span.title {
+  color: var(--primary-green-color);
+}
+
+.darkMode .darkSwitch li label span.title {
+  color: var(--primary-light-color);
+}
+
+.darkSwitch li label span.title1 {
+  color: var(--primary-dark-color);
+}
+
+.darkMode .darkSwitch li label span.title1 {
+  color: var(--primary-green-color);
+}
+
+.darkSwitch li label .action input {
+  appearance: none;
+}
+
+.darkSwitch li label .action i {
+  position: relative;
+  width: 40px;
+  height: 19px;
+  background: var(--primary-dark-color);
+  border-radius: 15px;
+}
+
+.darkSwitch li label .action input:checked ~ i {
+  background: var(--primary-light-color);
+}
+
+.darkSwitch li label .action i::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: var(--primary-light-color);
+  box-shadow: 0 wpx 4px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.darkSwitch li label .action input:checked ~ i::before {
+  left: calc(100% - 17px);
+  background: var(--primary-dark-color);
+}
+
+.darkMode .navbar-collapse ul li a {
+  color: var(--primary-light-color);
+}
+
+.nav-item {
+  transition: all 0.5s ease;
+}
+
+.darkMode ul.dropdown-menu {
+  background-color: var(--primary-dark-color);
+}
+
+.darkMode ul.dropdown-menu li.dropdown-submenu a {
+  color: var(--primary-light-color);
+}
+
+.darkMode ul.dropdown-menu li.dropdown-submenu a:hover {
+  color: white;
+}
+
+.darkMode .landing-banner svg.fill-body {
+  fill: var(--primary-dark-color) !important;
+}
+
+.darkMode .light-color {
+  color: var(--primary-light-color);
+}
+
+.darkMode .yellow-color {
+  color: var(--primary-yellow-color);
+}
+
+.darkMode .second-light-color {
+  color: var(--second-light-color);
+}
+
+.darkMode .card {
+  --bs-card-bg: #363738;
+}
+
+.path-costume {
+  position: relative;
+  top: 50px;
+  z-index: 1000;
+}
+
+.path-costume1 {
+  transform: rotate(180deg);
+  position: relative;
+}
+
+.visi-misi-logo {
+  max-height: 50px;
+}
+
+.foto-visi-misi {
+  max-height: 500px;
+}
+
+ul.visimisi li {
+  list-style-type: decimal;
+  color: var(--primary-blue-color);
+  font-weight: 700;
+}
+
+.darkMode ul.visimisi li {
+  color: var(--primary-light-color);
+}
+
+@media screen and (max-width: 500px) {
+  .darkSwitch li label span ion-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .darkMode .nav-item {
+    background-color: var(--primary-dark-color) !important;
+  }
+
+  .path-costume {
+    top: 10px;
+  }
+}
